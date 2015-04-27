@@ -7,7 +7,7 @@ class IndexController extends Controller {
     //安装引导程序
     public function index(){
 
-        $this->display();
+        $this->display('start');
 
     }
 
@@ -15,5 +15,6 @@ class IndexController extends Controller {
     //安装完成，锁定安装程序
     public function complete(){
 
+        $this->display();
     }
 }
